@@ -1,0 +1,23 @@
+<% for(var i=0; i< projects.length; i++){
+    %>
+<tr>
+    <td><%= i+1 %></td>
+    <td><%= projects[i].p_no %></td>
+    <td><%= projects[i].p_name %></td>
+    <td><%= projects[i].type %></td>
+    <td><%= projects[i].sanction_date %></td>
+    <td><%= projects[i].pdc_o_in_months %></td>
+    <td><%= projects[i].cost_o_in_lakhs %></td>
+    <td><%= projects[i].pdc_r_in_months %></td>
+    <td><%= projects[i].cost_r_in_lakhs %></td>
+    <td><%= projects[i].act_exp_in_lakhs %></td>
+    <td><%= projects[i].status %></td>
+    <td><a href="/update-project?id=<%= projects[i]._id %>" class="btn border-shadow update">
+        <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+    </a>
+    <a class="btn border-shadow delete" data-id=<%=projects[i]._id%>>
+        <span class="text-gradient"><i class="fas fa-times"></i></span>
+    </a>
+</td>
+</tr>
+<%} %>

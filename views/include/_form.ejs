@@ -1,0 +1,63 @@
+<!-- form handling -->
+<form action="/api/projects" method="POST" id="add_project" class=".form">
+    <div class="new_project">
+        <div class="form-group">
+            <label for="Pno">Project Number</label>
+            <input type="text" name="Pno" required>
+        </div>
+        <div class="form-group">
+            <label for="Pname">Project Name</label>
+        <input type="text" name="Pname" required >
+        </div>
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select name="type" id="type">
+                <option value="M">M</option>
+                <option value="I">I</option>
+                <option value="U">U</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sdate">Sanction Date</label>
+            <input type="date" name="sdate" required>
+        </div>
+        <div class="form-group">
+            <label for="pdc">PDC (Original)</label>
+            <input type="number" name="pdc" required>
+            <span>(months)</span>
+        </div>
+        <div class="form-group">
+            <label for="cost">Cost (Original)</label>
+            <input type="number" name="cost" required>
+            <span>(lakhs)</span>
+        </div>
+        <div class="form-group">
+            <label for="rpdc">PDC (Revised)</label>
+            <input type="number" name="rpdc" required>
+            <span>(months)</span>
+        </div>
+        <div class="form-group">
+            <label for="cost">Cost (Revised)</label>
+            <input type="number" name="rcost" required>
+            <span>(lakhs)</span>
+        </div>
+        <div class="form-group">
+            <label for="exp">Actual Expenditure</label>
+            <input type="number" name="exp" required>
+            <span>(lakhs)</span>
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select name="status" id="status">
+                <option value="ongoing">Ongoing</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <a href="projects.html">
+            <input type="submit" name="submit" value="Create Project"></a>
+        </div>
+    </div>
+</form>

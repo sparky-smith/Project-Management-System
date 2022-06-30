@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+
+:root{
+    --dark:#2b2d42;
+    --light:#adb5bd;
+    --border:#dee2e6;
+    --border-btn:#edf2f4;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--light);
+
+}
+header{
+    padding: 1.5rem;
+    background-color: var(--dark);
+    font-size: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+body{
+    background-color: var(--light);
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+form{
+    border: none;
+}
+
+table {
+    border-spacing: 0px;
+    width: 80vw;
+    margin-top: 2rem;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    text-align: center;
+    border-top: 1px solid var(--black);
+}
+
+thead {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+tbody>tr:hover {
+    background-color: var(--light);
+}
+span i{
+    background-color: #2b2d42;
+    padding: .5rem;
+}
+.box-nav{
+    background-color: #2b2d42;
+}
+/* .container{
+    width: 80vh;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+.text-dark{
+    color: var(--dark);
+}
+.inline{
+    display: inline-block;
+}
+.text-gradient{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#header nav{
+    background-color: #06d6a0;
+    padding: 1rem 0;
+    width: 100%;
+}
+#site-main{
+    margin-top: 6rem;
+    font-family: 'Barlow', sans-serif;
+}
+#site-main .container .box-nav > a{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+}
+#site-main .container form{
+    margin: 2em 0;
+}
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+.table td, .table th{
+    padding: .75rem;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+.table td>a.btn{
+    padding: .3rem 1rem;
+    font-size: 1.1rem;
+    margin: 0.2rem;
+}
+.table tr:hover{
+    background-color: #06d6a0;
+}
+.table tr:hover td>a{
+    box-shadow: none;
+}
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark);
+    border-color: #32383e;
+} */
+
+/* @media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr{border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
+    }
+} */
+
+
+/* add project & update project template */
+
+
+#add_project{
+background-color: red;
+padding: 1rem;
+}
+
+#add_project label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 150px;
+    text-align: right;
+    margin: .5rem;
+}
+
+#add_project input, #add_project select {
+    display: inline-block;
+    float: left;
+    margin-left: 5rem;
+    padding: .5rem;
+    width: 20rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--light);
+    border: none;
+    margin: .5rem;
+    
+}
